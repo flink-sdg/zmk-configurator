@@ -1,0 +1,12 @@
+{
+  "name": "Corn-ish Zen (5-column)",
+  "split": true,
+  "shape": [
+    [true, true, true, true, true],
+    [true, true, true, true, true],
+    [true, true, true, true, true],
+    [false, false, true, true ,true]
+  ],
+  "layers": [],
+  "includes": []
+}

@@ -1,0 +1,10 @@
+import {DataType} from '.';
+import type {ModelDefinition} from '.';
+
+export type {{pascalCase name}} = {
+    id: string;
+};
+
+export const {{pascalCase name}}Properties: () => ModelDefinition = () => ({
+    identity_id: DataType.STRING
+});

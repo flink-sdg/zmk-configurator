@@ -1,0 +1,94 @@
+{
+  "behaviors": [
+    {
+      "label": "Key Press",
+      "tooltip": "The most basic of behaviors, is the ability to send certain keycode presses and releases in response to activating a certain key.",
+      "href": "https://zmk.dev/docs/behaviors/key-press"
+    },
+    {
+      "label": "Layers",
+      "tooltip": "Often, you may want a certain key position to alter which layers are enabled, change the default layer, etc. Some of those behaviors are still in the works; the ones that are working now are documented here.",
+      "href": "https://zmk.dev/docs/behaviors/layers"
+    },
+    {
+      "label": "Hold-Tap",
+      "tooltip": "Hold-tap is the basis for other behaviors such as layer-tap and mod-tap.",
+      "href": "https://zmk.dev/docs/behaviors/hold-tap"
+    },
+    {
+      "label": "Mod-Tap",
+      "tooltip": "The Mod-Tap behavior sends a different keypress, depending on whether it's held or tapped.\n\n",
+      "href": "https://zmk.dev/docs/behaviors/mod-tap"
+    },
+    {
+      "label": "Mod-Morph",
+      "tooltip": "The Mod-Morph behavior sends a different keypress, depending on whether a specified modifier is being held during the keypress.",
+      "href": "https://zmk.dev/docs/behaviors/mod-morph"
+    },
+    {
+      "label": "Macros",
+      "tooltip": "The macro behavior allows configuring a list of other behaviors to invoke when the macro is pressed and/or released.",
+      "href": "https://zmk.dev/docs/behaviors/macros"
+    },
+    {
+      "label": "Key Toggle",
+      "tooltip": "The key toggle behavior toggles the press of a key. If the key is not currently pressed, key toggle will press it, holding it until the key toggle is pressed again or the key is released in some other way. If the key is currently pressed, key toggle will release it.\n\n",
+      "href": "https://zmk.dev/docs/behaviors/key-toggle"
+    },
+    {
+      "label": "Sticky Key",
+      "tooltip": "A sticky key stays pressed until another key is pressed. It is often used for 'sticky shift'. By using a sticky shift, you don't have to hold the shift key to write a capital.",
+      "href": "https://zmk.dev/docs/behaviors/sticky-key"
+    },
+    {
+      "label": "Sticky Layer",
+      "tooltip": "A sticky layer stays pressed until another key is pressed. By using a sticky layer, you don't have to hold the layer key to access a layer. Instead, tap the sticky layer key to activate the layer until the next keypress.",
+      "href": "https://zmk.dev/docs/behaviors/sticky-layer"
+    },
+    {
+      "label": "Tap Dance",
+      "tooltip": "A tap-dance key invokes a different behavior (e.g. kp) corresponding to how many times it is pressed. For example, you could configure a tap-dance key that acts as LSHIFT if tapped once, or Caps Lock if tapped twice. The expandability of the number of bindings attached to a particular tap-dance is a great way to add more functionality to a single key, especially for keyboards with a limited number of keys. Tap-dances are completely custom, so for every unique tap-dance key, a new tap-dance must be defined in your keymap's behaviors.",
+      "href": "https://zmk.dev/docs/behaviors/tap-dance"
+    },
+    {
+      "label": "Caps Word",
+      "tooltip": "The caps word behavior behaves similar to a caps lock, but will automatically deactivate when one of the configured \"break keycodes\" is pressed, or if the caps word key is pressed again. For smaller keyboards, using mod-taps, this can help avoid repeated alternating holds when typing words in all caps.\n\n",
+      "href": "https://zmk.dev/docs/behaviors/caps-word"
+    },
+    {
+      "label": "Key Repeat",
+      "tooltip": "The key repeat behavior when triggered will send whatever keycode was last sent/triggered.",
+      "href": "https://zmk.dev/docs/behaviors/key-repeat"
+    },
+    {
+      "label": "Reset",
+      "tooltip": "There are two available behaviors that can be used to trigger a reset of the keyboard. The first is a soft reset, that will simply reset and re-run the currently flashed firmware; the second when triggered will reset into the bootloader, allowing you to flash a new firmware to the keyboard.",
+      "href": "https://zmk.dev/docs/behaviors/reset"
+    },
+    {
+      "label": "Bluetooth",
+      "tooltip": "The bluetooth behavior allows management of various settings and states related to the bluetooth connection(s) between the keyboard and the host. By default, ZMK supports five \"profiles\" for selecting which bonded host computer/laptop/keyboard should receive the keyboard input; many of the commands here operate on those profiles.",
+      "href": "https://zmk.dev/docs/behaviors/bluetooth"
+    },
+    {
+      "label": "Output Selection",
+      "tooltip": "The output behavior allows selecting whether keyboard output is sent to the USB or bluetooth connection when both are connected. This allows connecting a keyboard to USB for power but outputting to a different device over bluetooth.\n\n",
+      "href": "https://zmk.dev/docs/behaviors/outputs"
+    },
+    {
+      "label": "RGB Underglow",
+      "tooltip": "This page contains RGB Underglow behaviors supported by ZMK.",
+      "href": "https://zmk.dev/docs/behaviors/underglow"
+    },
+    {
+      "label": "Backlight",
+      "tooltip": "This page contains backlight behaviors supported by ZMK.",
+      "href": "https://zmk.dev/docs/behaviors/backlight"
+    },
+    {
+      "label": "Power Management",
+      "tooltip": "These page contains some of the power management behaviors currently supported by ZMK.",
+      "href": "https://zmk.dev/docs/behaviors/power"
+    }
+  ]
+}

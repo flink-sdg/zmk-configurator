@@ -1,0 +1,40 @@
+{
+  "name": "zmk-configurator",
+  "version": "0.0.0",
+  "scripts": {
+    "build": "npx tailwindcss -i ./src/tailwind/tailwind.css -o ./src/assets/tailwind.css && vite build --mode prod",
+    "watch": "vite",
+    "watch:tailwind": "npx tailwindcss -i ./src/tailwind/tailwind.css -o ./src/assets/tailwind.css --watch",
+    "lint": "eslint ../../Downloads --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
+    "deploy": "aws s3 cp ./dist s3://zmk-configurator --recursive --exclude index.html && aws s3 cp ./dist/index.html s3://zmk-configurator --cache-control no-cache",
+    "plop": "plop"
+  },
+  "dependencies": {
+    "@auth0/auth0-vue": "^1.0.1",
+    "@fortawesome/fontawesome-free": "^6.1.1",
+    "animate.css": "^4.1.1",
+    "chart.js": "^3.8.0",
+    "i18next": "^21.8.0",
+    "i18next-fetch-backend": "^4.1.2",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.3",
+    "rxjs": "^7.5.5",
+    "vue": "^3.2.36",
+    "vue-chartjs": "^4.1.1",
+    "vue-router": "^4.0.14"
+  },
+  "devDependencies": {
+    "@rushstack/eslint-patch": "^1.1.0",
+    "@vitejs/plugin-vue": "^2.3.3",
+    "@vue/eslint-config-typescript": "^10.0.0",
+    "@vue/tsconfig": "^0.1.3",
+    "eslint": "^8.5.0",
+    "eslint-plugin-vue": "^8.2.0",
+    "plop": "^3.1.0",
+    "sass": "^1.51.0",
+    "tailwindcss": "^3.0.24",
+    "typescript": "~4.6.3",
+    "vite": "^2.9.5",
+    "vue-tsc": "^0.34.11"
+  }
+}
